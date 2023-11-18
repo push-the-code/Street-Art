@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", Arial, Sans-Serif;
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+.btn-hover:hover {
+    background: #cccccc;
+}
+.main-header {
+    background: #ffffff;
+    width: 100%;
+    padding: 24px 16px;
+    display: inline-block;
+}
+.main-header > .first {
+    float: left;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.main-header > .second {
+    float: right;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+#section-one {
+    display: flex;
+}
+#section-one > .sec-left {
+    flex: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#section-one > .sec-right {
+    flex: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#section-one img {
+    width: 100%;
+}
+
+#section-two {
+    background: #f1f1f1;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+}
+#section-two > img {
+    width: 30%;
+}
+#section-two > form {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+}
+#section-two > form > #red-text {
+    color: #e91e63;
+}
+#section-two > form > .form-inside {
+    text-align: center;
+    margin: 16px ;
+}
+#section-two > form > .form-inside > label, input, button {
+    display: block;
+    width: 100%;
+}
+#section-two > form > .form-inside > button {
+    width: 100%;
+    background: #616161;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+}
+#section-two > form > .form-inside > button:hover {
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #616161;
+    margin: -1px 0;
+    color: #616161;
+}
+
+.main-footer {
+    background: #ffffff;
+    width: 100%;
+    padding: 12px 0;
+    margin: 50px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 770px) {
+    .btn-hover:hover {
+        background: none;
+    }
+    
+    #section-two > img {
+        width: 50%;
+    }
+    #section-two > form > .form-inside > button:active {
+        width: 100%;
+        background: #616161;
+        color: #ffffff;
+        border: 1px solid #616161;
+        padding: 8px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 427px) {
+    
+    #section-one {
+        display: flex;
+        flex-direction: column;
+    }
+    #section-one > .sec-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #section-one > .sec-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #section-one img {
+        width: 100%;
+    }
+    .btn-hover:hover {
+        background: none;
+    }
+    
+    #section-two > img {
+        width: 75%;
+    }
+    #section-two > form > .form-inside > button:active {
+        width: 100%;
+        background: #616161;
+        color: #ffffff;
+        border: 1px solid #616161;
+        padding: 8px;
+        cursor: pointer;
+    }
+}
