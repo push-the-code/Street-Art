@@ -1,1 +1,154 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Street Art</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <style type="text/css" media="all">
+            * {
+                box-sizing: border-box;
+                font-family: "Raleway", Arial, Sans-Serif;
+                font-weight: normal;
+            }
+            body {
+                margin: 0;
+                background: #f1f1f1;
+            }
+            a {
+                color: #000000;
+                text-decoration: none;
+                padding: 8px 16px;
+            }
+            input {
+                border: 1px solid #cccccc;
+                padding: 8px;
+            }
+            .btn-hover:hover {
+                background: #cccccc;
+            }
+            .main-header {
+                background: #ffffff;
+                width: 100%;
+                padding: 24px 16px;
+                display: inline-block;
+            }
+            .main-header > .first {
+                float: left;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+            .main-header > .second {
+                float: right;
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+            
+            #section-two {
+                background: #f1f1f1;
+                display: block;
+                text-align: center;
+                line-height: 1.5;
+            }
+            #section-two > img {
+                width: 30%;
+            }
+            #section-two > form {
+                padding: 0;
+                display: block;
+                margin: 0 auto;
+                width: 65%;
+            }
+            #section-two > form > #red-text {
+                color: #e91e63;
+            }
+            #section-two > form > .form-inside {
+                text-align: center;
+                margin: 16px ;
+            }
+            #section-two > form > .form-inside > label, input, button {
+                display: block;
+                width: 100%;
+            }
+            #section-two > form > .form-inside > button {
+                width: 100%;
+                background: #616161;
+                color: #ffffff;
+                border: none;
+                padding: 8px;
+            }
+            
+            .main-footer {
+                background: #ffffff;
+                width: 100%;
+                padding: 12px 0;
+                margin: 30px 0 0 0;
+                text-align: center;
+                font-size: 12px;
+            }
+            
+            @media only screen and (max-width: 770px) {
+                .btn-hover:hover {
+                    background: none;
+                }
+                
+                #section-two > img {
+                    width: 50%;
+                }
+            }
+            
+            @media only screen and (max-width: 427px) {
+                .btn-hover:hover {
+                    background: none;
+                }
+                
+                #section-two > img {
+                    width: 75%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="main-header">
+            <a class="first btn-hover" href="#">my art</a>
+            <a class="second btn-hover" href="#section-two">about</a>
+        </header>
+        
+        <div class="section-one">
+            
+        </div>
+        
+        <div id="section-two">
+            <h2 style="font-weight: normal;">About</h2>
+            <img src="https://cdn.pixabay.com/photo/2023/10/07/23/39/girl-8301168_1280.png" />
+            <form accept-charset="utf-8">
+                <p>
+                    Just me, myself and I, exploring the universe of unknownment.
+                    I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.
+                    I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
+                    Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                    ultricies congue gravida diam non fringilla.
+                </p>
+                <p id="red-text">Do not hesitate to contact me!</p>
+                <div class="form-inside">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="form-inside">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-inside">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" value="" />
+                </div>
+                <div class="form-inside">
+                    <button type="button">Send</button>
+                </div>
+            </form>
+        </div>
+        <footer class="main-footer">
+            <p>Created and Designed by Abcd Xyz!</p>
+        </footer>
+    </body>
+</html>
